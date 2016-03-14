@@ -1,0 +1,3 @@
+#!/bin/sh -e
+[ -f node_modules/.bin/browserify ] || npm update
+node_modules/.bin/browserify kalman-play.js -o bundle.js
